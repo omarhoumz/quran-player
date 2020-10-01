@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+  direction: rtl;
+  gap: 1em;
+  margin: 1em;
+}
+
+.button {
+  padding: 9px 8px 5px 8px;
+  --color: #03676e;
+  color: var(--color);
+  background-color: white;
+  border: 1px solid var(--color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.button.active {
+  background-color: var(--color);
+  color: white;
+}
